@@ -32,8 +32,14 @@ textarea {
   outline: none;
 }
 
+textarea:hover {
+  box-shadow: 0 0 10px 1px white;
+}
+
+textarea:focus {
+  box-shadow: 0 0 10px 1px orange;
+}
 .previewer {
-  border: 1px solid var(--primary-color);
   overflow-y: scroll;
 }
 
@@ -42,10 +48,11 @@ textarea {
   top: 10px;
   right: 0;
   font-size: 2em;
+  color: var(--primary-color);
 }
 
 .icon:hover {
-  color: var(--primary-color);
+  color: inherit;
 }
 
 @media(max-width: 500px) {

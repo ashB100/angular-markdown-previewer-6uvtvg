@@ -13,7 +13,8 @@ export class MarkdownPreviewerComponent implements OnInit {
     return this.isMinimised ? '40%' : '90%'
   } 
 
-  initialMarkdown = `# Heading One
+  initialMarkdown = `**<---Edit this content:**
+# Heading One
 ## Heading Two
 **Bold Text**
 ### Image
