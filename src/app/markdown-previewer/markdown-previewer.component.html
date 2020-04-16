@@ -1,6 +1,6 @@
 <section class="flex-item">
 	<h2>Edit</h2>
-	<div class="container">
+	<!-- <div class="container"> -->
 		<textarea [formControl]="markdown" class="editor">
     </textarea>
 
@@ -8,17 +8,17 @@
 			<i *ngIf="isMinimised"  class="fas fa-plus-circle"></i>
 			<i *ngIf="!isMinimised"  class="fas fa-minus-circle"></i>
 		</div>
-	</div>
+	<!-- </div> -->
 </section>
 
 <div class="flex-item">
 	<h2>Preview</h2>
-	<div class="container">
+	<!-- <div class="container"> -->
 		<div (click)="isMinimised = !isMinimised" *ngIf="!isMinimised">
 		<i class="icon fas fa-minus-circle"></i>
 		</div>
 
-	</div>
+	<!-- </div> -->
 	<div class="previewer" [innerHTML]="html"></div>
 
 </div>
