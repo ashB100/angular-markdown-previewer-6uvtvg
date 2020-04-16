@@ -1,8 +1,7 @@
 :host {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 1em;
-  justify-content: space-around;
+  /* justify-content: space-around; */
 }
 
 .flex-item {
@@ -11,7 +10,6 @@
 }
 
 .flex-item h2 {
-  /* color: #fff; */
   text-shadow: 2px 2px var(--primary-color);
   letter-spacing: 0.1em;
 }
@@ -23,11 +21,12 @@ textarea, .previewer {
   border-radius: 10px;
   height: 70vh;
   padding: 1em;
-  width: 100%;
+  /* width: 100%; */
   background-color: #fff;
 }
 
 textarea {
+  display: block;
   border: 5px ridge var(--primary-color);
   outline: none;
 }
