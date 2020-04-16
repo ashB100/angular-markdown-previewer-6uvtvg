@@ -50,7 +50,7 @@ textarea {
 
 @media(max-width: 500px) {
   .flex-item {
-    --width: 100%;
+    --width: 90%;
   }
 
   .icon {
