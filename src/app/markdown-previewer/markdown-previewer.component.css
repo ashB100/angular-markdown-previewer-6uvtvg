@@ -8,17 +8,17 @@
   width: var(--width);
   margin-bottom: 1em;
   position: relative;
-    height: 70vh;
+
 }
 
 .flex-item h2 {
   text-shadow: 2px 2px var(--primary-color);
   letter-spacing: 0.1em;
 }
-/* .container {
+.container {
   position: relative;
-  width: 100%;
-} */
+  height: 70vh;
+}
 
 textarea, .previewer {
   border-radius: 10px;
