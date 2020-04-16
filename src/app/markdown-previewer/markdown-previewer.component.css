@@ -1,14 +1,13 @@
 :host {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-around; */
+  justify-content: space-around;
+  margin: 0 1em;
 }
 
 .flex-item {
   width: var(--width);
   margin-bottom: 1em;
-  position: relative;
-
 }
 
 .flex-item h2 {
@@ -17,15 +16,14 @@
 }
 .container {
   position: relative;
-  height: 70vh;
 }
 
 textarea, .previewer {
   border-radius: 10px;
-  height: 100%;
   padding: 1em;
   width: 100%;
   background-color: #fff;
+  height: 70vh;
 }
 
 textarea {
@@ -48,4 +46,14 @@ textarea {
 
 .icon:hover {
   color: var(--primary-color);
+}
+
+@media(max-width: 500px) {
+  .flex-item {
+    --width: 100%;
+  }
+
+  .icon {
+    visibility: hidden;
+  }
 }
