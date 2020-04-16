@@ -1,0 +1,49 @@
+:host {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 1em;
+  justify-content: space-around;
+}
+
+.flex-item {
+  width: var(--width);
+  margin-bottom: 1em;
+}
+
+.flex-item h2 {
+  /* color: #fff; */
+  text-shadow: 2px 2px var(--primary-color);
+  letter-spacing: 0.1em;
+}
+.container {
+  position: relative;
+}
+
+textarea, .previewer {
+  border-radius: 10px;
+  height: 70vh;
+  padding: 1em;
+  width: 100%;
+  background-color: #fff;
+}
+
+textarea {
+  border: 5px ridge var(--primary-color);
+  outline: none;
+}
+
+.previewer {
+  border: 1px solid var(--primary-color);
+  overflow-y: scroll;
+}
+
+.icon {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  font-size: 2em;
+}
+
+.icon:hover {
+  color: var(--primary-color);
+}

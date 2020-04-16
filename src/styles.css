@@ -1,0 +1,24 @@
+
+html {
+  --primary-color: #ffaa00;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background-color: black;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+code {
+  display: inline-block;
+
+  padding: 0.5em;
+  background-color: lightblue;
+  overflow: scroll;
+}
