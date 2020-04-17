@@ -5,8 +5,8 @@
     </textarea>
 
 		<div class="icon" (click)="isMinimised = !isMinimised">
-			<i *ngIf="isMinimised"  class="fas fa-plus-circle"></i>
-			<i *ngIf="!isMinimised"  class="fas fa-minus-circle"></i>
+			<i *ngIf="isMinimised"  class="fas fa-window-maximize"></i>
+			<i *ngIf="!isMinimised"  class="fas fa-window-minimize"></i>
 		</div>
 	</div>
 </section>
@@ -15,7 +15,7 @@
 	<h2>Preview</h2>
 	<div class="container">
 		<div (click)="isMinimised = !isMinimised" *ngIf="!isMinimised">
-		<i class="icon fas fa-minus-circle"></i>
+		<i class="icon fas fa-window-minimize"></i>
 		</div>
 
 	</div>

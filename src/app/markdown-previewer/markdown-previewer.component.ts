@@ -13,12 +13,19 @@ export class MarkdownPreviewerComponent implements OnInit {
     return this.isMinimised ? '40%' : '90%'
   } 
 
-  initialMarkdown = `**<---Edit this content:**
+  initialMarkdown =
+  `
+**\u21af Edit this content:**
+
 # Heading One
+
 ## Heading Two
+
 **Bold Text**
+
 ### Image
 ![Beautiful Nature](https://images.unsplash.com/photo-1550184816-3eeadf82295f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60)
+
 ### List
 - item one
 - item two

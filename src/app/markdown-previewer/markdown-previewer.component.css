@@ -27,17 +27,21 @@ textarea, .previewer {
 }
 
 textarea {
+  font-family: monospace;
+  font-size: 1.2em;
   display: block;
   border: 5px ridge var(--primary-color);
   outline: none;
 }
 
 textarea:hover {
-  box-shadow: 0 0 10px 1px white;
+  box-shadow: 0 0 5px 1px white;
+  transform: translateX(1px);
 }
 
 textarea:focus {
   box-shadow: 0 0 10px 1px orange;
+  transform: none;
 }
 .previewer {
   overflow-y: scroll;
@@ -47,7 +51,7 @@ textarea:focus {
   position: absolute;
   top: 10px;
   right: 0;
-  font-size: 2em;
+  font-size: 1.5em;
   color: var(--primary-color);
 }
 
