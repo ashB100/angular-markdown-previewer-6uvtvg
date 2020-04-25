@@ -36,12 +36,12 @@ textarea {
 
 textarea:hover {
   box-shadow: 0 0 5px 1px white;
-  transform: translateX(1px);
+  /* transform: translateX(1px); */
 }
 
 textarea:focus {
   box-shadow: 0 0 10px 1px orange;
-  transform: none;
+  /* transform: none; */
 }
 .previewer {
   overflow-y: scroll;
