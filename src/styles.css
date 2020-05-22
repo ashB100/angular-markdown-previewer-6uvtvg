@@ -1,7 +1,12 @@
 
 html {
   --primary-color: #ffaa00;
+  --accent-color: #FF2A00;
   height: 100%;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
 }
 
 body {
@@ -17,7 +22,6 @@ img {
 
 code {
   display: inline-block;
-
   padding: 0.5em;
   background-color: lightblue;
   overflow: scroll;

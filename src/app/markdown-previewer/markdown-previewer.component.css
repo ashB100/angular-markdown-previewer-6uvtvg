@@ -5,20 +5,22 @@
   margin: 0 1em;
 }
 
-.flex-item {
+.section {
   width: var(--width);
   margin-bottom: 1em;
 }
 
-.flex-item h2 {
+.section-heading {
   text-shadow: 2px 2px var(--primary-color);
   letter-spacing: 0.1em;
+  margin-bottom: 0.5em;
 }
-.container {
+
+.icon-container {
   position: relative;
 }
 
-textarea, .previewer {
+.editor, .previewer {
   border-radius: 10px;
   padding: 1em;
   width: 100%;
@@ -26,41 +28,36 @@ textarea, .previewer {
   height: 70vh;
 }
 
-textarea {
+.editor {
   font-family: monospace;
-  font-size: 1.2em;
+  font-size: 1.1em;
+  line-height: 1.4;
   display: block;
-  border: 5px ridge var(--primary-color);
+  border: 3px ridge var(--primary-color);
   outline: none;
 }
 
-textarea:hover {
-  box-shadow: 0 0 5px 1px white;
-  /* transform: translateX(1px); */
+.editor:hover {
+  box-shadow: 0 0 4px 1px rgb(197, 56, 56);
 }
 
-textarea:focus {
-  box-shadow: 0 0 10px 1px orange;
-  /* transform: none; */
-}
 .previewer {
   overflow-y: scroll;
 }
 
 .icon {
   position: absolute;
-  top: 10px;
-  right: -20px;
-  font-size: 1.5em;
+  top: 5px;
+  right: 10px;
   color: var(--primary-color);
 }
 
 .icon:hover {
-  color: inherit;
+  color: var(--accent-color);
 }
 
-@media(max-width: 500px) {
-  .flex-item {
+@media(max-width: 400px) {
+  .section {
     --width: 90%;
   }
 

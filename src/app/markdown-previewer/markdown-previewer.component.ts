@@ -10,7 +10,7 @@ import { MarkdownService } from './markdown.service';
 export class MarkdownPreviewerComponent implements OnInit {
   isMinimised = true;
   @HostBinding('style.--width') get width() {
-    return this.isMinimised ? '40%' : '90%'
+    return this.isMinimised ? '45%' : '90%'
   } 
 
   initialMarkdown =
@@ -56,4 +56,8 @@ function calculateCircumference(radius) {
     this.markdown.valueChanges.subscribe(markdown => this.html = this.markdownService.parse(markdown))
   }
 
+  onToggleMinimise(event) {
+    this.isMinimised = !this.isMinimised;
+    console.log('toggle', event);
+  }
 }

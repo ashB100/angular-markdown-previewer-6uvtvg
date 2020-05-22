@@ -1,0 +1,10 @@
+.icon {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: var(--primary-color);
+}
+
+.icon:hover {
+  color: var(--accent-color);
+}

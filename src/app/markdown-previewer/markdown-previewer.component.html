@@ -1,24 +1,18 @@
-<section class="flex-item">
-	<h2>Edit</h2>
-	<div class="container">
+<section class="section">
+	<h2 class="section-heading">Edit:</h2>
+	<div class="icon-container">
 		<textarea [formControl]="markdown" class="editor">
     </textarea>
 
-		<div class="icon" (click)="isMinimised = !isMinimised">
-			<i *ngIf="isMinimised"  class="fas fa-window-maximize"></i>
-			<i *ngIf="!isMinimised"  class="fas fa-window-minimize"></i>
-		</div>
+    <app-container-sizer [isMinimised]="isMinimised" (toggleMinimise)="onToggleMinimise($event)"></app-container-sizer>
 	</div>
 </section>
 
-<div class="flex-item">
-	<h2>Preview</h2>
-	<div class="container">
-		<div (click)="isMinimised = !isMinimised" *ngIf="!isMinimised">
-		<i class="icon fas fa-window-minimize"></i>
-		</div>
-
+<!-- Not using a section element as the markdown heading styles will need to be reset -->
+<div class="section">
+	<h2 class="section-heading">Preview:</h2>
+	<div class="icon-container">
+    <app-container-sizer [isMinimised]="isMinimised" (toggleMinimise)="onToggleMinimise($event)"></app-container-sizer>
 	</div>
 	<div class="previewer" [innerHTML]="html"></div>
-
 </div>
