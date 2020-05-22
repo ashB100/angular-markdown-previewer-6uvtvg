@@ -48,6 +48,7 @@ function calculateCircumference(radius) {
   `;
 
   markdown = new FormControl(this.initialMarkdown);
+  
   html = this.markdownService.parse(this.markdown.value);
 
   constructor(private markdownService: MarkdownService) { }
