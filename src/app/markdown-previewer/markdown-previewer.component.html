@@ -1,9 +1,9 @@
-<section class="section">
+<div class="section">
 	<h2 class="section-heading">Edit:</h2>
   <app-container-sizer [isMinimised]="isMinimised" (toggleMinimise)="onToggleMinimise($event)"></app-container-sizer>
   <textarea [formControl]="markdown" class="editor">
     </textarea>
-</section>
+</div>
 
 <!-- Not using a section element as the markdown heading styles will need to be reset -->
 <div class="section">
