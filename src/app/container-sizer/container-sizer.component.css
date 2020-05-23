@@ -1,3 +1,7 @@
+.icon-container {
+  position: relative;
+}
+
 .icon {
   position: absolute;
   top: 5px;
@@ -7,4 +11,10 @@
 
 .icon:hover {
   color: var(--accent-color);
+}
+
+@media(max-width: 400px) {
+  .icon {
+    visibility: hidden;
+  }
 }
