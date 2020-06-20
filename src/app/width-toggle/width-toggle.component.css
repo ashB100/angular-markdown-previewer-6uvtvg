@@ -13,7 +13,7 @@
   color: var(--accent-color);
 }
 
-@media(max-width: 400px) {
+@media(max-width: 310px) {
   .icon {
     visibility: hidden;
   }

@@ -15,10 +15,6 @@
   margin-bottom: 0.5em;
 }
 
-/* .icon-container {
-  position: relative;
-} */
-
 .editor, .previewer {
   border-radius: 10px;
   padding: 1em;
@@ -55,7 +51,7 @@
   color: var(--accent-color);
 }
 
-@media(max-width: 400px) {
+@media(max-width: 310px) {
   .section {
     --width: 90%;
   }

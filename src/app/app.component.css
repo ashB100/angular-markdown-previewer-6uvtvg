@@ -3,26 +3,24 @@ p {
 }
 
 header {
-  background: url('https://media0.giphy.com/media/xWC0BCZtkDxE869erD/200.webp?cid=ecf05e47ae8d3ac6ecff9f9a1b8868368e17e7f35367e4e7&rid=200.webp');
-  background-position: center;
-  background-size: cover;
-  height: 70px;
-  border-radius: 0 0 30px 30px;
-}
-
-header {
   display: flex;
   text-align: center;
   justify-content: center;
+  align-items: center;
+  background: url('https://media0.giphy.com/media/xWC0BCZtkDxE869erD/200.webp?cid=ecf05e47ae8d3ac6ecff9f9a1b8868368e17e7f35367e4e7&rid=200.webp');
+  background-position: center;
+  background-size: cover;
+  height: 60px;
+  border-radius: 0 0 30px 30px;
 }
+
 header h1 {
   color: #fff;
   margin: 0;
-  line-height: 2em;
 }
 
-@media(max-width: 400px) {
+@media(max-width: 310px) {
   header {
-    height: 150px;
+    height: 100px;
   }
 }

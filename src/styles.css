@@ -2,6 +2,7 @@
 html {
   --primary-color: #ffaa00;
   --accent-color: #FF2A00;
+  --media-max-width: 310px;
   height: 100%;
 }
 
