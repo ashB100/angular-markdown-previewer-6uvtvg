@@ -59,6 +59,5 @@ function calculateCircumference(radius) {
 
   onToggleMinimise(event) {
     this.isMinimised = !this.isMinimised;
-    console.log('toggle', event);
   }
 }

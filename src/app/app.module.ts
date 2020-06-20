@@ -5,13 +5,13 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { MarkdownPreviewerComponent } from './markdown-previewer/markdown-previewer.component';
-import { ContainerSizerComponent } from './container-sizer/container-sizer.component';
+import { WidthToggleComponent } from './width-toggle/width-toggle.component';
 
 
 
 @NgModule({
   imports:      [ BrowserModule, ReactiveFormsModule ],
-  declarations: [ AppComponent, HelloComponent, MarkdownPreviewerComponent, ContainerSizerComponent ],
+  declarations: [ AppComponent, HelloComponent, MarkdownPreviewerComponent, WidthToggleComponent ],
   bootstrap:    [ AppComponent ],
   providers: []
 })

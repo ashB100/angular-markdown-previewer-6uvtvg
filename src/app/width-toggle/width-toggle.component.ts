@@ -1,11 +1,11 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'app-container-sizer',
-  templateUrl: './container-sizer.component.html',
-  styleUrls: ['./container-sizer.component.css']
+  selector: 'app-width-toggle',
+  templateUrl: './width-toggle.component.html',
+  styleUrls: ['./width-toggle.component.css']
 })
-export class ContainerSizerComponent {
+export class WidthToggleComponent {
   @Input() isMinimised: boolean;
   @Output() toggleMinimise = new EventEmitter<boolean>();
 
