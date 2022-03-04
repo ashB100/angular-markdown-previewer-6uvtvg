@@ -9,43 +9,12 @@ import { MarkdownService } from './markdown.service';
 })
 export class MarkdownPreviewerComponent implements OnInit {
   isMinimised = true;
+
   @HostBinding('style.--width') get width() {
-    return this.isMinimised ? '45%' : '90%'
+    return this.isMinimised ? '50%' : '90%'
   } 
 
-  initialMarkdown =
-  `
-**\u21af Edit this content:**
-
-# Heading One
-
-## Heading Two
-
-**Bold Text**
-
-### Image
-![Beautiful Nature](https://images.unsplash.com/photo-1550184816-3eeadf82295f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60)
-
-### List
-- item one
-- item two
-- item three
-
-### *Italic*
-
-### Inline Code 
-\`const pi = Math.pi\`
-
-### Multiline Code
-\`\`\`
-function calculateCircumference(radius) {
-  return 2 * Math.PI * radius;
-}
-\`\`\`
-
-### Link
-[Twitter](https://twitter.com/ashnita01)
-  `;
+  initialMarkdown = this.markdownService.initialMarkdown;
 
   markdown = new FormControl(this.initialMarkdown);
   
@@ -57,7 +26,7 @@ function calculateCircumference(radius) {
     this.markdown.valueChanges.subscribe(markdown => this.html = this.markdownService.parse(markdown))
   }
 
-  onToggleMinimise(event) {
+  onToggleWidth() {
     this.isMinimised = !this.isMinimised;
   }
 }

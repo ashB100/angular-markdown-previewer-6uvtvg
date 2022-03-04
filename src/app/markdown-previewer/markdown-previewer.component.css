@@ -10,16 +10,17 @@
 }
 
 .section-heading {
-  text-shadow: 2px 2px var(--primary-color);
-  letter-spacing: 0.1em;
+  color: white;
   margin-bottom: 0.5em;
+  font-size: 1em;
+  text-align: center;
 }
 
 .editor, .previewer {
-  border-radius: 10px;
   padding: 1em;
   width: 100%;
-  background-color: #fff;
+  background-color: white;
+  color: black;
   height: 70vh;
 }
 
@@ -28,16 +29,13 @@
   font-size: 1.1em;
   line-height: 1.4;
   display: block;
-  border: 3px ridge var(--primary-color);
-  outline: none;
+  outline-color: sienna;
 }
 
-.editor:hover {
-  box-shadow: 0 0 4px 1px rgb(197, 56, 56);
-}
 
 .previewer {
   overflow-y: scroll;
+  border: 1px solid;
 }
 
 .icon {

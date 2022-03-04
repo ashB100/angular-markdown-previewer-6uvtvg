@@ -1,13 +1,14 @@
+<!-- I'm not using a section element as the markdown heading styles will need to be reset -->
+
 <div class="section">
-	<h2 class="section-heading">Edit:</h2>
-  <app-width-toggle [isMinimised]="isMinimised" (toggleMinimise)="onToggleMinimise($event)"></app-width-toggle>
+	<h2 class="section-heading">Editor</h2>
+  <app-width-toggle [isMinimised]="isMinimised" (toggleWidth)="onToggleWidth()"></app-width-toggle>
   <textarea [formControl]="markdown" class="editor">
     </textarea>
 </div>
 
-<!-- Not using a section element as the markdown heading styles will need to be reset -->
 <div class="section">
-	<h2 class="section-heading">Preview:</h2>
-    <app-width-toggle [isMinimised]="isMinimised" (toggleMinimise)="onToggleMinimise($event)"></app-width-toggle>
+	<h2 class="section-heading">Preview</h2>
+    <app-width-toggle [isMinimised]="isMinimised" (toggleWidth)="onToggleWidth()"></app-width-toggle>
 	<div class="previewer" [innerHTML]="html"></div>
 </div>

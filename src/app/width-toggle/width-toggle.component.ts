@@ -7,12 +7,12 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class WidthToggleComponent {
   @Input() isMinimised: boolean;
-  @Output() toggleMinimise = new EventEmitter<boolean>();
+  @Output() toggleWidth = new EventEmitter<boolean>();
 
   constructor() { }
 
-  onToggleMinimise() {
-    this.toggleMinimise.emit(!this.isMinimised)
+  toggle() {
+    this.toggleWidth.emit(!this.isMinimised)
   }
 
 }
