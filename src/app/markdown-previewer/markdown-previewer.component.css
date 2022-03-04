@@ -49,7 +49,7 @@
   color: var(--accent-color);
 }
 
-@media(max-width: 310px) {
+@media(max-width: 210px) {
   .section {
     --width: 90%;
   }

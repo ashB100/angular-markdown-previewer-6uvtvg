@@ -1,5 +1,5 @@
 export const initialMarkdownText = `
-<!--- \u21af Edit this content -->
+<!--- Edit this \u21af content -->
 
 # Heading One
 

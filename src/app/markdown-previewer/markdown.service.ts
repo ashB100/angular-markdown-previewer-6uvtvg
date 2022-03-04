@@ -9,7 +9,7 @@ export class MarkdownService {
   initialMarkdown = initialMarkdownText;
   constructor() { }
 
-  parse(text) {
+  parse(text: string) {
     return marked.parse(text);
   }
 }
